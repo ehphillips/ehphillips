@@ -1,49 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estevan Phillips | Contact</title>
-  <meta name="keywords" content="contact, inquiry, email, GitHub, LinkedIn">
-  <!-- Remember to update your keywords -->
-  <meta name="description" content="You can reach Estevan via email, or find him on LinkedIn and GitHub">
-  <link href="assets/boilerplate.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estevan Phillips | Contact</title>
+<meta name="keywords" content="contact, inquiry, email, GitHub">
+<meta name="description" content="You can reach Estevan via email, or find him on GitHub">
+<link href="assets/boilerplate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/nty6rgl.css">
 </head>
 
 <body>
-  <header>
-    <nav><a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="history.html">History</a> | <a
-        href="about.html">About</a> | <a href="contact.html">Contact</a></nav>
-    <div class="hero-image"> <img src="assets/profile-jolly.png" width="500" height="500" alt="">
-      <!-- Don't forget to add alt text -->
-      <div class="hero-text">
-        <h1>Thanks for reaching out...</h1>
-      </div>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a> | </li>
+    <li><a href="about.html">About</a> | </li>
+    <li><a href="projects.html">Projects</a> | </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="hero-image"> <img src="assets/profile-jolly.png" width="25%" height="25%" alt="A headshot of the author smiling.">
+    <div class="hero-text">
+      <p>Thanks for reaching out...</p>
     </div>
-    <!-- This may be a misappropriation of the h1 tag; reformat <p> using CSS? -->
-  </header>
-  <main>
-    <form action="#" method="post"> <!-- # is a placeholder -->
+  </div>
+</header>
+
+<main>
+  <p>You can find me at <a href="https://github.com/ehphillips">GitHub</a> or <a href="mailto:ehphillips@my.waketech.edu">email me directly</a>. Please include "portfolio" in the subject for quickest results.</p>
+
+  <p>This form is a work in progress; please disregard while I get my ducks in a row.</p>
+  <form action="#" method="post">
     <fieldset>
-      <label for="inquiry">What are you inquiring about?</label><br>
-      <textarea id="inquiry" name="inquiry" rows="10" cols="60" maxlength="500" placeholder="Email, phone number..."></textarea><br>
-      <label for="name">What is your name?</label><br>
-      <input type="text" id="name" name="name" maxlength="60" required><br>
-      <label for="contact">How should I contact you?</label><br>
-      <input type="text" id="contact" name="contact" maxlength="60" required><br>
-      <input type="submit" value="Submit">
+      <label for="name">What is your name?</label>
+      <br>
+      <input type="text" id="name" name="name" maxlength="60" required>
+      <br>
+	  <label for="inquiry">Message:</label>
+      <br>
+      <textarea id="inquiry" name="inquiry" rows="1" cols="60" maxlength="500" placeholder="What is your inquiry?"></textarea>
+      <br>
+      <label for="contact">How should I contact you?</label>
+      <br>
+      <input type="text" id="contact" name="contact" maxlength="60" placeholder="Email, phone number..." required>
     </fieldset>
-    </form><br>
-    <p>You can also find me at:</p>
-    <ul>
-      <li>GitHub</li>
-      <li>LinkedIn</li>
-      <li><a href="mailto:estevan.h.phillips@gmail.com">Email me directly</a></li>
-    </ul>
-  </main>
-  <footer>
-    <hr>
-    <p>Last updated on <!-- #BeginDate format:Am1 -->March 29, 2023<!-- #EndDate -->.</p>
-  </footer>
+	  <p class="disabled">Submit</p>
+  </form>
+</main>
+
+<footer>
+  <hr>
+  <p>Last updated on <!-- #BeginDate format:Am1 -->April 30, 2023<!-- #EndDate -->.</p>
+</footer>
 </body>
 </html>
